@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
+    path('login/', include("login.urls")),   #This redirects the search ..login/ to urls included in login app
     path('polls/', include("polls.urls")),   #This redirects the search ..polls/ to urls included in polls app
     path('admin/', admin.site.urls),
     
